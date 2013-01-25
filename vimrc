@@ -119,14 +119,16 @@ autocmd BufNewFile *.php 0r ~/.vim/skeleton.php | normal Gdd
 :let g:closetag_html_style=1
 :autocmd Filetype html source $HOME . "/.vim/closetag.vim"
 
+
 " PHP options
 :function! PhpDocLoad()
-:   so $HOME/.vim/php-doc.vim
+:   source $HOME/.vim/my-php-doc.vim
 :   inoremap <C-P><ESC> :call PhpDocSingle()<CR>i
 :   nnoremap <C-P> :call PhpDocSingle()<CR>
 :   vnoremap <C-P> :call PhpDocRange()<CR>
 :   inoremap ( ()<Left>
 :endfunction
+
 
 " Set keywordprg to use pman in PHP files
 :autocmd FileType php set keywordprg=/usr/local/zend/bin/pman

@@ -2,7 +2,8 @@
 " No copyright, feel free to use this, as you like.
 
 " Including PDV
-source ~/.vim/php-doc.vim
+"source ~/.vim/php-doc.vim
+source ~/.vim/my-php-doc.vim
 
 " {{{ Settings
 
