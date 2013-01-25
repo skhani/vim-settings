@@ -3,6 +3,7 @@
 
 " Disable the splash screen
 :set shortmess +=I
+:set shell=/bin/bash
 
 " Enable pathogen bundles
 " See http://www.vim.org/scripts/script.php?script_id=2332
@@ -177,7 +178,7 @@ autocmd BufNewFile *.php 0r ~/.vim/skeleton.php | normal Gdd
 ":nnoremap <C-H> <ESC>:!phpm -e <C-R>=expand("<cword>")<CR><CR>
 
 " JSLint (CTRL-L when in a JS file)
-:autocmd FileType javascript noremap <C-L> :!/home/matthew/bin/jslint %<CR>
+:autocmd FileType javascript noremap <C-L> :!/home/shahinm/bin/jslint %<CR>
 
 " Make a print macro (linux only)
 " :map <Leader>p :write !lpr<CR>
@@ -310,14 +311,14 @@ set scrolloff=3
 :map <Leader>n :NERDTree<CR>
 
 " vimwiki options
-:let g:vimwiki_list = [{'path': '~/mydocs/wiki/'}]
+:let g:vimwiki_list = [{'path': '~/Documents/Wiki/vimwiki'}]
 
 " Color scheme
 " First line ensures we can have full spectrum of colors
 :set t_Co=256
 " :let g:solarized_termcolors=256
 :let g:solarized_termtrans=1
-:colorscheme solarized
+:colorscheme molokai
 
 " ACK support
 :set grepprg=ack-grep\ -a
@@ -325,7 +326,7 @@ set scrolloff=3
 :map <Leader>g :Ack
 
 " snipMate options
-let g:snips_author = "Matthew Weier O'Phinney"
+let g:snips_author = "Shahin Mohammadkhani"
 let g:snippets_dir = $HOME . "/.vim/snippets/"
 
 " Highlight current line
@@ -397,25 +398,6 @@ let Tlist_Process_File_Always = 1
 let Tlist_Display_Prototype = 0
 let Tlist_Display_Tag_Scope = 1
 
-" paster.vim settings
-" These settings will paste to weierophinney.pastebin.com
-let g:PASTER_FORMAT = '-d "api_paste_format=textFormat"'
-let g:PASTER_TEXT_AREA = "api_paste_code"
-let g:PASTER_URI = "http://pastebin.com/api/api_post.php"
-let g:PASTER_BROWSER_COMMAND = $HOME . "/bin/chrome"
-let g:PASTER_FIXED_ARGUMENTS = '-d "api_dev_key=fa5e9dc272b702d916c887e76deae4cc&api_option=paste"'
-let g:nickID = "weierophinney"
-let g:PASTER_RESPONSE_FLAG = "^http:"
-function! g:Paster_ParseLocationFrom(line)
-  let locator = "n/a"
-
-  if (match(a:line, "^http:") > -1)
-    let locator = a:line
-  endif
-
-  return "Location: ".locator
-endfunction
-
 " argumentrewrap binding
 nnoremap <silent> <leader>r :call argumentrewrap#RewrapArguments()<CR>
 
@@ -448,7 +430,7 @@ let g:gist_show_privates = 1
 
 " vim-powerline settings
 let g:Powerline_symbols="unicode"
-let g:Powerline_cache_file="/home/matthew/tmp/Powerline-vim.cache"
+let g:Powerline_cache_file="/home/shahinm/tmp/Powerline-vim.cache"
 
 " syntastic settings
 let g:syntastic_check_on_open=0

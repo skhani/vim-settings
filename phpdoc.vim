@@ -198,10 +198,9 @@ fun! ClassHeader()
 	let @z=@z . l:indent . " * This is the long description for the Class\n"
 	let @z=@z . l:indent . " *\n"
 	let @z=@z . l:indent . " * @package Package\n"
-	let @z=@z . l:indent . " * @author Matthew Weier O'Phinney <matthew@zend.com>\n"
-	let @z=@z . l:indent . " * @copyright (c) 2006 - Present, Zend Technologies, Inc.\n"
+	let @z=@z . l:indent . " * @author Shahin Mohammadkhani <skhani@creativechannel.com>\n"
+	let @z=@z . l:indent . " * @copyright (c) 2006 - Present, Creative Channel Services.\n"
 	" prevent RCS/CVS to expand the Id Keyword.
-	let @z=@z . l:indent . " * @version $" . "Id:$\n"
 	"let @z=@z . l:indent . " * @subpackage SubPackage\n"
 	"let @z=@z . l:indent . " * @see ??\n"
 	let @z=@z . l:indent . " */\n"
