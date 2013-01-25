@@ -154,7 +154,3 @@
 	path = bundle/molokai
 	url = git://github.com/tomasr/molokai.git
     ignore = dirty
-[submodule "my-php-doc.vim"]
-	path = my-php-doc.vim
-	url = git@github.com:scopium/php-doc.git
-    ignore = dirty
