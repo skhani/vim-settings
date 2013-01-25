@@ -122,7 +122,7 @@ autocmd BufNewFile *.php 0r ~/.vim/skeleton.php | normal Gdd
 
 " PHP options
 :function! PhpDocLoad()
-:   source $HOME/.vim/my-php-doc.vim
+:   source $HOME/.vim/my-php-doc/php-doc.vim
 :   inoremap <C-P><ESC> :call PhpDocSingle()<CR>i
 :   nnoremap <C-P> :call PhpDocSingle()<CR>
 :   vnoremap <C-P> :call PhpDocRange()<CR>

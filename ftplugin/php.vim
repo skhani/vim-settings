@@ -3,7 +3,7 @@
 
 " Including PDV
 "source ~/.vim/php-doc.vim
-source ~/.vim/my-php-doc.vim
+source ~/.vim/my-php-doc/php-doc.vim
 
 " {{{ Settings
 
