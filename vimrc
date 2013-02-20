@@ -313,7 +313,10 @@ set scrolloff=3
 :map <Leader>n :NERDTree<CR>
 
 " vimwiki options
-:let g:vimwiki_list = [{'path': '~/Documents/Wiki/vimwiki'}]
+:let g:vimwiki_list = [{'path': '~/Documents/Wiki/Index','auto_export': 1},{'path': '~/Documents/Wiki/Index/Work','auto_export': 1}]
+
+"exuberant ctags
+set tags=~/.vim/mytags/framework
 
 " Color scheme
 " First line ensures we can have full spectrum of colors
