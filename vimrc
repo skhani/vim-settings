@@ -51,7 +51,7 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 :set showmode
 :set wildmenu
 :set wildmode=list:longest
-:set undofile
+":set undofile
 
 " Remap F1 to escape, because that happens a lot when reaching. :)
 inoremap <F1> <ESC>
